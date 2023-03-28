@@ -1,0 +1,45 @@
+/* "대표적인 구현 문제"
+
+여행가 A 처음 (x,y)좌표 = (1,1)
+상,하,좌,우 = U,D,L,R 로 움직일 수 있음. 갈 수 없는 경우는 계산 X
+최종으로 도착한 곳의 좌표를 출력
+
+1. 입력 조건: 첫째 줄에 공간의 크기를 나타내는 N이 입력 / 둘째 줄에 A가 이동할 계획서 내용이 주어짐 
+2. 출력 조건: 최종저긍로 도착할 지점의좌표를 공백으로 구분하여 출력
+
+*/
+
+N = int(input())
+plan=input().split()
+
+x=1
+y=1
+
+dx= [0,0,-1,1]
+dy= [-1.1.0,0]
+
+move=['L','R','U','D']
+
+for p in plan:
+  for i in range(len(move)):
+    if p == move[i]:
+      nx=x+dx[i]
+      xy=y+dy[i]
+  if nx < 1 or ny < 1 or nx>n or ny > n:
+    continue
+  x,y=nx,ny
+
+print(x, y)
+
+
+
+
+
+
+
+
+
+
+
+
+
