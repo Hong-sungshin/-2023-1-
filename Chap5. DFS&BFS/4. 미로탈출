@@ -21,7 +21,7 @@ def bfs(x,y):
   while queue:
     #큐가 빌 때까지 반복할때마다 큐에서 하나의 원소를 꺼냄
     x,y=queue.popleft()
-    ## 현재 위체에서 네 방향으로 위치 확인 
+    ## 현재 위치에서 네 방향으로 위치 확인 
     for i in range(4):
       # 인접한 노드의 위치
       nx= x + dx[i]  
